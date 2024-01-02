@@ -1,0 +1,12 @@
+card_id       =  { ASCII_DIGIT+ }
+card_preamble = _{ "Card" ~ WHITE_SPACE+ ~ card_id ~ ":" }
+
+winner  =  { ASCII_DIGIT+ }
+winners = _{ winner ~ (WHITE_SPACE+ ~ winner)* }
+
+guess   =  { ASCII_DIGIT+ }
+guesses = _{ guess ~ (WHITE_SPACE+ ~ guess)* }
+
+card = {
+    card_preamble ~ WHITE_SPACE+ ~ winners ~ WHITE_SPACE+ ~ "|" ~ WHITE_SPACE+ ~ guesses
+}

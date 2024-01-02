@@ -1,0 +1,13 @@
+game_id       =  { ASCII_DIGIT+ }
+game_preamble = _{ "Game" ~ WHITE_SPACE ~ game_id ~ ":" }
+
+ball_count  = { ASCII_DIGIT+ }
+ball_colour = { "red" | "green" | "blue" }
+ball        = { ball_count ~ WHITE_SPACE ~ ball_colour }
+
+round  =  { WHITE_SPACE ~ ball ~ ("," ~ WHITE_SPACE ~ ball)* }
+rounds = _{ round ~ (";" ~ round)* }
+
+game = {
+    game_preamble ~ rounds
+}

@@ -1,0 +1,5 @@
+dst = { ASCII_DIGIT+ }
+src = { ASCII_DIGIT+ }
+len = { ASCII_DIGIT+ }
+
+map = { dst ~ WHITE_SPACE ~ src ~ WHITE_SPACE ~ len }
