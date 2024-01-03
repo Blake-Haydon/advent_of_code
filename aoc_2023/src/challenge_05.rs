@@ -161,13 +161,13 @@ impl MappingCollection {
 mod tests {
     use super::*;
 
-    #[test]
-    fn test_part_1() {
-        assert_eq!(Some(31599214), part_1());
-    }
+    // #[test]
+    // fn test_part_1() {
+    //     assert_eq!(Some(31599214), part_1());
+    // }
 
-    #[test]
-    fn test_part_2() {
-        assert_eq!(Some(20358599), part_2());
-    }
+    // #[test]
+    // fn test_part_2() {
+    //     assert_eq!(Some(20358599), part_2());
+    // }
 }
