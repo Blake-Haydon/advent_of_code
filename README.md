@@ -1,6 +1,7 @@
 # Advent of Code
 
-- [2023](/aoc_2023)
+- [2022 solutions](/aoc_2022) | [problems](https://adventofcode.com/2022)
+- [2023 solutions](/aoc_2023) | [problems](https://adventofcode.com/2023)
 
 ## Build
 
